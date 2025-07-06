@@ -19,11 +19,11 @@ public class ComboPromotion implements Promotion {
     public int apply(Map<String, Integer> cart, Map<String, Product> catalog){
         int count1 = cart.getOrDefault(sku1, 0);
         int count2 = cart.getOrDefault(sku2, 0);
-        int sets = Math.min(count1, count2);
+        int comboSets = Math.min(count1, count2);
 
-        cart.put(sku1, count1 - sets);
-        cart.put(sku2, count2 - sets);
+        cart.put(sku1, count1 - comboSets);
+        cart.put(sku2, count2 - comboSets);
 
-        return sets * comboPrice;
+        return comboSets * comboPrice;
     }
 }

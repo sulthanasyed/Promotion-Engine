@@ -21,10 +21,10 @@ public class BulkPromotion  implements Promotion {
 
         int count = cart.get(sku);
         int unitPrice = catalog.get(sku).getUnitPrice();
-        int sets = count / quantityRequired;
+        int bulkSets = count / quantityRequired;
         int remainder = count % quantityRequired;
 
         cart.put(sku, 0);
-        return sets * promoPrice + remainder * unitPrice;
+        return bulkSets * promoPrice + remainder * unitPrice;
     }
 }
