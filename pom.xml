@@ -12,7 +12,8 @@
 	<artifactId>promotionengine</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Promotion Engine</name>
-	<description>Project for calculating cost</description>
+	<description>This project implements a Promotion Engine for a checkout system, built using Java, Spring Boot, and TDD principles.
+		It calculates the total price of a cart after applying various pricing promotions.</description>
 	<url/>
 	<licenses>
 		<license/>
